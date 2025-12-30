@@ -35,6 +35,9 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .image-slider {
@@ -88,6 +91,22 @@
         .slick-dots li.slick-active button:before {
             color: white;
             opacity: 1;
+        }
+        
+        /* Auto-scroll animation */
+        .slick-slide {
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+        
+        .slick-slide img {
+            margin: 0 auto;
+            max-height: 600px;
+            object-fit: contain;
         }
 
         /* Blog Style Overrides */
@@ -173,7 +192,7 @@
      <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo">Pratik Devkota</a>
+            <a href="/index.html#home" class="logo">Pratik Devkota</a>
             
             <!-- Hamburger Menu Button -->
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -205,18 +224,10 @@
         <!-- Project Image Slider -->
         <div class="project-slider-container">
             <div class="image-slider">
-                <div class="slide">
-                    <img src="../images/Gym/Screenshot (22).png" alt="Gym Management Dashboard" class="slider-image">
-                </div>
-                <div class="slide">
-                    <img src="../images/Gym/Screenshot (23).png" alt="Member Management" class="slider-image">
-                </div>
-                <div class="slide">
-                    <img src="../images/Gym/Screenshot (24).png" alt="Class Schedule" class="slider-image">
-                </div>
-                <div class="slide">
-                    <img src="../images/Gym/Screenshot (25).png" alt="Trainer Management" class="slider-image">
-                </div>
+                <div><img src="../images/Gym/Screenshot (22).png" alt="Gym Management System - Dashboard" class="slider-image"></div>
+                <div><img src="../images/Gym/Screenshot (23).png" alt="Gym Management System - Members" class="slider-image"></div>
+                <div><img src="../images/Gym/Screenshot (24).png" alt="Gym Management System - Classes" class="slider-image"></div>
+                <div><img src="../images/Gym/Screenshot (25).png" alt="Gym Management System - Reports" class="slider-image"></div>
             </div>
         </div>
 
@@ -269,38 +280,12 @@
         </section>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/#about">About</a></li>
-                        <li><a href="/#projects">Projects</a></li>
-                        <li><a href="/#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>Email: pratik@example.com</p>
-                    <p>Phone: +977 9841234567</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Pratik Devkota. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+   
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../js/script.js"></script>
-    <script src="../js/components.js"></script>
     <script>
-        // Initialize Slick Slider
         $(document).ready(function(){
             $('.image-slider').slick({
                 dots: true,

@@ -40,13 +40,23 @@
         .image-slider {
             width: 100%;
             position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         
         .slider-image {
-            width: 100%;
+            width: auto;
+            max-width: 100%;
+            max-height: 600px;
             height: auto;
             display: block;
+            margin: 0 auto;
             border-radius: 8px;
+            object-fit: contain;
+        }
+        
+        .slide {
+            text-align: center;
         }
         
         .slick-prev, .slick-next {
@@ -173,7 +183,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo">Pratik Devkota</a>
+            <a href="/index.html#home" class="logo">Pratik Devkota</a>
             
             <!-- Hamburger Menu Button -->
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -294,11 +304,16 @@
             $('.image-slider').slick({
                 dots: true,
                 infinite: true,
-                speed: 300,
+                speed: 800,
                 slidesToShow: 1,
                 adaptiveHeight: true,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 4000,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                pauseOnDotsHover: false,
+                cssEase: 'ease-in-out',
+                fade: true,
                 arrows: true,
                 prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
                 nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',

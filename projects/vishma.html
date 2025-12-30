@@ -78,6 +78,41 @@
             margin: 2rem 0;
             border-radius: 8px;
             overflow: hidden;
+            position: relative;
+        }
+        
+        .slick-prev, .slick-next {
+            z-index: 1;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .slick-prev:before, .slick-next:before {
+            font-size: 40px;
+            color: #4f46e5;
+        }
+        
+        .slick-prev {
+            left: 10px;
+        }
+        
+        .slick-next {
+            right: 10px;
+        }
+        
+        .slick-dots {
+            bottom: 10px;
+        }
+        
+        .slick-dots li button:before {
+            font-size: 12px;
+            color: #fff;
+            opacity: 0.5;
+        }
+        
+        .slick-dots li.slick-active button:before {
+            color: #4f46e5;
+            opacity: 1;
         }
         
         .image-slider img {
@@ -124,7 +159,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo">Pratik Devkota</a>
+            <a href="/index.html#home" class="logo">Pratik Devkota</a>
             
             <!-- Hamburger Menu Button -->
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -165,9 +200,16 @@
         <section class="blog-section">
             <h2 class="section-title">Project Showcase</h2>
             <div class="image-slider">
-                <div><img src="../images/Vishma/dashboard.png" alt="Vishma Dashboard"></div>
-                <div><img src="../images/Vishma/course.png" alt="Course Page"></div>
-                <div><img src="../images/Vishma/lesson.png" alt="Interactive Lesson"></div>
+                <div><img src="../images/Vishma/Screenshot (10).png" alt="Vishma Dashboard"></div>
+                <div><img src="../images/Vishma/Screenshot (11).png" alt="Course Page"></div>
+                <div><img src="../images/Vishma/Screenshot (12).png" alt="Interactive Lesson"></div>
+                <div><img src="../images/Vishma/Screenshot (13).png" alt="Certificate"></div>
+                <div><img src="../images/Vishma/Screenshot (14).png" alt="Interactive Lesson"></div>
+                <div><img src="../images/Vishma/Screenshot (15).png" alt="Interactive Lesson"></div>
+                <div><img src="../images/Vishma/Screenshot (16).png" alt="Interactive Lesson"></div>
+                <div><img src="../images/Vishma/Screenshot (17).png" alt="Interactive Lesson"></div>
+                <div><img src="../images/Vishma/Screenshot (18).png" alt="Interactive Lesson"></div>
+                <div><img src="../images/Vishma/Screenshot (19).png" alt="Interactive Lesson"></div>
             </div>
         </section>
         
@@ -209,20 +251,24 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../js/script.js"></script>
-    <script src="../js/components.js"></script>
     <script>
-        // Initialize Slick Slider
         $(document).ready(function(){
             $('.image-slider').slick({
                 dots: true,
                 infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true,
+                speed: 800,
+                fade: true,
+                cssEase: 'ease-in-out',
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,  // 3 seconds between slides
                 arrows: true,
+                pauseOnHover: true,   // Pause on hover
+                pauseOnFocus: false,  // Continue autoplay when window is not focused
+                pauseOnDotsHover: true, // Pause when hovering over dots
+                swipeToSlide: true,   // Allow swiping to navigate
+                draggable: true,      // Enable mouse/touch dragging
+                touchThreshold: 10,   // Sensitivity for touch events
+                waitForAnimate: false, // Don't wait for animation to complete before changing slides
                 prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
                 nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
             });
