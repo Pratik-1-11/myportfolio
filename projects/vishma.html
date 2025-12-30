@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vishma - A modern e-learning platform for professional courses and skill development.">
+    <meta name="keywords" content="E-learning, Online Courses, Web Application, MERN Stack, Pratik Devkota">
+    <meta name="author" content="Pratik Devkota">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pratikdevkota.com/projects/vishma">
+    <meta property="og:title" content="Vishma E-Learning Platform | Pratik Devkota">
+    <meta property="og:description" content="A comprehensive e-learning platform for professional courses and skill development.">
+    <meta property="og:image" content="https://pratikdevkota.com/images/Vishma/dashboard.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vishma E-Learning Platform | Pratik Devkota">
+    <meta name="twitter:description" content="A comprehensive e-learning platform for professional courses and skill development.">
+    <meta name="twitter:image" content="https://pratikdevkota.com/images/Vishma/dashboard.png">
+
+    <title>Vishma E-Learning - Pratik Devkota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Blog Style Overrides */
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .blog-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+        
+        .blog-meta {
+            color: #718096;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        
+        .blog-section {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .section-content {
+            line-height: 1.7;
+            color: #4a5568;
+        }
+        
+        .image-slider {
+            margin: 2rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .image-slider img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        
+        .objectives-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .objectives-list li {
+            padding: 0.75rem 0 0.75rem 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+        
+        .objectives-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #4f46e5;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-container {
+                padding: 1rem;
+            }
+            
+            .blog-section {
+                padding: 1.5rem;
+            }
+            
+            .blog-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Pratik Devkota</a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="/index.html" class="nav-link">Home</a></li>
+                <li><a href="/index.html#about" class="nav-link">About</a></li>
+                <li><a href="/index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="/index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Blog Content -->
+    <div class="blog-container">
+        <header class="blog-header">
+            <h1 class="blog-title">Vishma E-Learning Platform</h1>
+            <div class="blog-meta">
+                <span><i class="fas fa-calendar-alt"></i> September 2024</span>
+                <span style="margin: 0 10px;">•</span>
+                <span><i class="fas fa-tag"></i> Web Development, E-learning, MERN Stack</span>
+            </div>
+        </header>
+        
+        <!-- Introduction Section -->
+        <section class="blog-section">
+            <h2 class="section-title">Introduction</h2>
+            <div class="section-content">
+                <p>Vishma is a comprehensive e-learning platform designed to provide high-quality professional courses and skill development programs. The platform offers an interactive learning experience with video lessons, quizzes, and hands-on projects, making it easier for learners to acquire new skills at their own pace.</p>
+            </div>
+        </section>
+        
+        <!-- Image Slider -->
+        <section class="blog-section">
+            <h2 class="section-title">Project Showcase</h2>
+            <div class="image-slider">
+                <div><img src="../images/Vishma/dashboard.png" alt="Vishma Dashboard"></div>
+                <div><img src="../images/Vishma/course.png" alt="Course Page"></div>
+                <div><img src="../images/Vishma/lesson.png" alt="Interactive Lesson"></div>
+            </div>
+        </section>
+        
+        <!-- Objectives Section -->
+        <section class="blog-section">
+            <h2 class="section-title">Project Objectives</h2>
+            <div class="section-content">
+                <ul class="objectives-list">
+                    <li>Develop a user-friendly platform for course creators and learners</li>
+                    <li>Implement interactive video lessons with progress tracking</li>
+                    <li>Create a robust content management system for course materials</li>
+                    <li>Integrate secure payment processing for course purchases</li>
+                    <li>Ensure responsive design for optimal learning on all devices</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Technical Details -->
+        <section class="blog-section">
+            <h2 class="section-title">Technical Implementation</h2>
+            <div class="section-content">
+                <p>Built with the MERN stack (MongoDB, Express.js, React.js, Node.js) for a full JavaScript development experience. The platform features a microservices architecture for scalability and uses modern development practices for maintainability and performance.</p>
+                
+                <h3>Key Technologies:</h3>
+                <ul class="objectives-list">
+                    <li>Frontend: React.js with Redux for state management</li>
+                    <li>Backend: Node.js with Express.js and MongoDB</li>
+                    <li>Authentication: JWT with role-based access control</li>
+                    <li>Video Hosting: Integrated with Vimeo API</li>
+                    <li>Deployment: Docker containers on AWS ECS with CI/CD pipeline</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <include data-file="../components/footer.html"></include>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/components.js"></script>
+    <script>
+        // Initialize Slick Slider
+        $(document).ready(function(){
+            $('.image-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+            });
+        });
+    </script>
+</body>
+</html>

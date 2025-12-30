@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sahara Disaster Management System - A comprehensive solution for disaster management and response.">
+    <meta name="keywords" content="Disaster Management, Emergency Response, Web Application, PHP, MySQL, Pratik Devkota">
+    <meta name="author" content="Pratik Devkota">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pratikdevkota.com/projects/sahara">
+    <meta property="og:title" content="Sahara Disaster Management System | Pratik Devkota">
+    <meta property="og:description" content="A comprehensive solution for disaster management and emergency response.">
+    <meta property="og:image" content="https://pratikdevkota.com/images/Sahara/a.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sahara Disaster Management System | Pratik Devkota">
+    <meta name="twitter:description" content="A comprehensive solution for disaster management and emergency response.">
+    <meta name="twitter:image" content="https://pratikdevkota.com/images/Sahara/a.png">
+
+    <title>Sahara Disaster Management - Pratik Devkota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Project Slider Styles */
+        .project-slider-container {
+            margin: 2rem 0 3rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-slider {
+            width: 100%;
+            position: relative;
+        }
+        
+        .slider-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        
+        .slick-prev, .slick-next {
+            width: 40px;
+            height: 40px;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        
+        .slick-prev:hover, .slick-next:hover {
+            background: #4a5568;
+            color: white;
+        }
+        
+        .slick-prev {
+            left: 15px;
+        }
+        
+        .slick-next {
+            right: 15px;
+        }
+        
+        .slick-dots {
+            bottom: 15px;
+        }
+        
+        .slick-dots li button:before {
+            font-size: 12px;
+            color: white;
+            opacity: 0.7;
+        }
+        
+        .slick-dots li.slick-active button:before {
+            color: white;
+            opacity: 1;
+        }
+
+        /* Blog Style Overrides */
+        .blog-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .blog-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+        
+        .blog-meta {
+            color: #718096;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        
+        .blog-section {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .section-content {
+            line-height: 1.7;
+            color: #4a5568;
+        }
+        
+        .objectives-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .objectives-list li {
+            padding: 0.75rem 0 0.75rem 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+        
+        .objectives-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #4f46e5;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-container {
+                padding: 1rem;
+            }
+            
+            .blog-section {
+                padding: 1.5rem;
+            }
+            
+            .blog-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Pratik Devkota</a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="/index.html" class="nav-link">Home</a></li>
+                <li><a href="/index.html#about" class="nav-link">About</a></li>
+                <li><a href="/index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="/index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Blog Content -->
+    <div class="blog-container">
+        <header class="blog-header">
+            <h1 class="blog-title">Sahara Disaster Management System</h1>
+            <div class="blog-meta">
+                <span class="publish-date">Published on: March 20, 2023</span>
+                <span class="read-time">7 min read</span>
+            </div>
+        </header>
+
+        <!-- Project Image Slider -->
+        <div class="project-slider-container">
+            <div class="image-slider">
+                <div class="slide">
+                    <img src="../images/Sahara/a.png" alt="Sahara Dashboard" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/b.png" alt="Incident Reporting" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/c.png" alt="Resource Management" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/d.png" alt="Team Coordination" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/e.png" alt="Analytics Dashboard" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/f.png" alt="Emergency Contacts" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/g.png" alt="Incident Map" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/h.png" alt="Task Management" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/i.png" alt="User Management" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/j.png" alt="Settings" class="slider-image">
+                </div>
+                <div class="slide">
+                    <img src="../images/Sahara/k.png" alt="Mobile Responsive View" class="slider-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class="blog-section">
+            <h2 class="section-title">Introduction</h2>
+            <div class="section-content">
+                <p>The Sahara Disaster Management System is a comprehensive web application designed to streamline disaster response and management operations. This platform enables efficient coordination between emergency services, volunteers, and affected communities during natural or man-made disasters.</p>
+            </div>
+        </section>
+
+        <!-- Objectives Section -->
+        <section class="blog-section">
+            <h2 class="section-title">Project Objectives</h2>
+            <div class="section-content">
+                <ul class="objectives-list">
+                    <li>Develop a real-time disaster monitoring and alert system</li>
+                    <li>Create an efficient resource allocation and management system</li>
+                    <li>Implement secure user authentication and role-based access control</li>
+                    <li>Design an intuitive dashboard for real-time data visualization</li>
+                    <li>Ensure high availability and performance under heavy load</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Details -->
+        <section class="blog-section">
+            <h2 class="section-title">Technical Implementation</h2>
+            <div class="section-content">
+                <p>Built with a robust tech stack including PHP for the backend, MySQL for the database, and modern frontend technologies. The application features real-time updates, secure authentication, and a responsive design that works across all devices.</p>
+
+                <h3>Key Technologies:</h3>
+                <ul class="objectives-list">
+                    <li>Frontend: HTML5, CSS3, JavaScript, jQuery</li>
+                    <li>Backend: Core PHP, RESTful APIs</li>
+                    <li>Database: MySQL with PDO for secure database operations</li>
+                    <li>Maps Integration: Google Maps API for real-time disaster mapping</li>
+                    <li>Deployment: Apache Web Server, cPanel</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <include data-file="../components/footer.html"></include>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/components.js"></script>
+    <script>
+        // Initialize Slick Slider
+        $(document).ready(function(){
+            $('.image-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
