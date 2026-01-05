@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <link href="css/style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pratik Devkota - React Native & Full-Stack Developer from Nepal. Building efficient, scalable, and user-friendly applications.">
-    <meta name="keywords" content="React Native Developer Nepal, Full Stack Developer Nepal, Node.js Developer, Mobile App Developer Nepal">
+    <meta name="description"
+        content="Pratik Devkota - Expert React Native & Full-Stack Developer from Nepal. Specializing in high-performance mobile apps and scalable web solutions using Node.js, PHP, and modern JS frameworks.">
+    <meta name="keywords"
+        content="React Native Developer Nepal, Full Stack Developer Nepal, Node.js Developer, Mobile App Developer Nepal, Pratik Devkota, Web Development Nepal, Software Engineer Kathmandu">
     <meta name="author" content="Pratik Devkota">
-    
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://devkotapratik.com.np/">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pratikdevkota.com/">
-    <meta property="og:title" content="Pratik Devkota | React Native & Full-Stack Developer">
-    <meta property="og:description" content="Portfolio of Pratik Devkota - React Native & Full-Stack Developer from Nepal">
-    <meta property="og:image" content="https://pratikdevkota.com/images/og-image.jpg">
-    
+    <meta property="og:url" content="https://devkotapratik.com.np/">
+    <meta property="og:title" content="Pratik Devkota | React Native & Full-Stack Developer Portfolio">
+    <meta property="og:description"
+        content="Visit the portfolio of Pratik Devkota, a passionate Full-Stack and React Native Developer from Nepal building innovative digital solutions.">
+    <meta property="og:image" content="https://devkotapratik.com.np/images/og-image.jpg">
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pratik Devkota | React Native & Full-Stack Developer">
-    <meta name="twitter:description" content="Portfolio of Pratik Devkota - React Native & Full-Stack Developer from Nepal">
-    <meta name="twitter:image" content="https://pratikdevkota.com/images/og-image.jpg">
+    <meta name="twitter:description"
+        content="Portfolio of Pratik Devkota - React Native & Full-Stack Developer from Nepal. Building future-ready applications.">
+    <meta name="twitter:image" content="https://devkotapratik.com.np/images/og-image.jpg">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pratik Devkota",
+      "url": "https://devkotapratik.com.np/",
+      "jobTitle": "Full Stack Developer",
+      "description": "Pratik Devkota is a React Native and Full-Stack Developer from Palungtar Municipality, Gorkha district, Nepal. He specializes in high-performance mobile apps and scalable web solutions.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palungtar",
+        "addressRegion": "Gorkha",
+        "addressCountry": "Nepal"
+      },
+      "alumniOf": "Pokhara University",
+      "knowsAbout": ["React Native", "Full-Stack Development", "Node.js", "PHP", "Mobile App Development", "JavaScript", "IT Services in Palungtar"],
+      "sameAs": [
+        "https://github.com/Pratik-1-11",
+        "https://www.linkedin.com/in/pratik-devkota-09a559364/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pratik Devkota Portfolio",
+      "url": "https://devkotapratik.com.np/",
+      "description": "Professional portfolio of Pratik Devkota, a React Native and Full-Stack Developer from Nepal."
+    }
+    </script>
 
     <title>Pratik Devkota | React Native & Full-Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -29,19 +70,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="#home" class="logo">Pratik Devkota</a>
-            
+
             <!-- Hamburger Menu Button -->
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            
+
             <!-- Navigation Links -->
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -51,338 +93,385 @@
             </ul>
         </div>
     </nav>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content" data-aos="fade-right">
-                <h1>Hi, I'm <span class="highlight">Pratik Devkota</span></h1>
-                <h2>React Native & Full-Stack Developer</h2>
-                <p>I build exceptional digital experiences that make people's lives easier through clean, efficient code and intuitive design.</p>
-                <div class="cta-buttons">
-                    <a href="Pratik_Devkota CV.pdf" class="cta-button" download="Pratik-Devkota-CV.pdf">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
-                    <a href="#contact" class="cta-button secondary">Contact Me</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Pratik-1-11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/pratik-devkota-09a559364/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="mailto:pratikdevkota05@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image" data-aos="fade-left">
-                <img src="images/hero.png" alt="Pratik Devkota - React Native Developer" width="500" height="500">
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">About Me</h2>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <p>I am a passionate learner with a strong foundation in web and software development. I focus on building efficient, scalable, and user-friendly solutions across multiple platforms. My interests include software engineering, project management, and integrating modern technologies to create innovative applications that make a real-world impact.</p>
-                    <p>With a background in both Computer Information Systems and Civil Engineering, I bring a unique perspective to problem-solving and project execution. I'm passionate about blending engineering and technology for real-world problem solving and committed to continuous learning and self-improvement.</p>
-                </div>
-                <div class="education" data-aos="fade-left">
-                    <h3>Education</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <h4>Bachelor in Computer Information Systems (BCIS)</h4>
-                            <p class="timeline-date">2022 – Present</p>
-                            <p>Pokhara University</p>
-                        </div>
-                        <div class="timeline-item">
-                            <h4>Diploma in Civil Engineering</h4>
-                            <p class="timeline-date">2018 – 2021</p>
-                            <p>CTEVT</p>
-                        </div>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1>Hi, I'm <span class="highlight">Pratik Devkota</span></h1>
+                    <h2>React Native & Full-Stack Developer</h2>
+                    <p>I build exceptional digital experiences that make people's lives easier through clean, efficient
+                        code
+                        and intuitive design.</p>
+                    <div class="cta-buttons">
+                        <a href="Pratik_Devkota CV.pdf" class="cta-button" download="Pratik-Devkota-CV.pdf">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="cta-button secondary">Contact Me</a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
-                    <ul>
-                        <li>HTML & CSS</li>
-                        <li>Bootstrap & Tailwind</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3><i class="fas fa-server"></i> Backend & Mobile</h3>
-                    <ul>
-                        <li>PHP (Core)</li>
-                        <li>Node.js & Express</li>
-                        <li>SQL & MySQL</li>
-                        <li>React Native</li>
-                        <li>RESTful APIs</li>
-                    </ul>
-                </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>PHP</li>
-                    </ul>
-                </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <h3><i class="fas fa-tools"></i> Additional Skills</h3>
-                    <ul>
-                        <li>Software Engineering</li>
-                        <li>Project Management</li>
-                        <li>Git & GitHub</li>
-                        <li>VS Code</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-            <div class="projects-grid">
-
-                <!-- Project 5 - Vishma POS -->
-                <a href="projects/vishma.html" class="project-card-link">
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="500">
-                        <div class="project-image">
-                            <img src="images/Vishma/Screenshot (9).png" alt="Vishma POS for Marts" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Vishma POS</h3>
-                            <p class="project-tech">MongoDB, Express, React, Node.js</p>
-                            <p>A modern Point of Sale (POS) system designed for marts and retail stores in Nepal. Features include sales management, inventory tracking, customer management, and real-time reporting, providing a complete retail management solution.</p>
-                            <div class="project-links">
-                                <span class="project-link">
-                                    <i class="fas fa-external-link-alt"></i> View Details
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- Project 1 - Gym Management -->
-                <a href="projects/gym-management.html" class="project-card-link">
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-image">
-                            <img src="images/Gym/Screenshot (22).png" alt="Gym Management System" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Gym Management System</h3>
-                            <p class="project-tech">PHP, MySQL, JavaScript</p>
-                            <p>A comprehensive solution for managing gym memberships, classes, and personal training sessions. Features include member tracking, attendance, payment processing, and reporting tools for fitness businesses.</p>
-                            <div class="project-links">
-                                <span class="project-link">
-                                    <i class="fas fa-external-link-alt"></i> View Details
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 2 - Sahara Disaster Management -->
-                <a href="projects/sahara-disaster.html" class="project-card-link">
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="project-image">
-                            <img src="images/Sahara/a.png" alt="Sahara Disaster Management" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Sahara Disaster Management</h3>
-                            <p class="project-tech">PHP, MySQL, JavaScript</p>
-                            <p>A comprehensive solution for disaster management and emergency response. Features include real-time incident reporting, resource allocation, and coordination tools for emergency responders and relief organizations.</p>
-                            <div class="project-links">
-                                <span class="project-link">
-                                    <i class="fas fa-external-link-alt"></i> View Details
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 3 - Jhandi Burja Game -->
-                <a href="projects/jhandiBurja.html" class="project-card-link">
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="project-image">
-                            <img src="images/Jhandi Burja/Screenshot (20).png" alt="Jhandi Burja Game" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Jhandi Burja Game</h3>
-                            <p class="project-tech">HTML, CSS, JavaScript</p>
-                            <p>Developed an interactive online version of Nepal's traditional dice game. Implemented betting and winnings logic with responsive design for mobile devices, bringing the classic game to the digital world.</p>
-                            <div class="project-links">
-                                <span class="project-link">
-                                    <i class="fas fa-external-link-alt"></i> View Details
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 4 - Book Ecommerce -->
-                <a href="projects/book.html" class="project-card-link">
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="project-image">
-                            <img src="images/Book/Screenshot (27).png" alt="Book Ecommerce Site" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3>Book Ecommerce Site</h3>
-                            <p class="project-tech">PHP, MySQL, React</p>
-                            <p>Built a fully functional book store with search, cart, and checkout features. Integrated backend APIs for inventory and order management, creating a seamless shopping experience for book lovers.</p>
-                            <div class="project-links">
-                                <span class="project-link">
-                                    <i class="fas fa-external-link-alt"></i> View Details
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                
-            </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="500">
-                <a href="https://github.com/Pratik-i-11?tab=repositories" class="cta-button" target="_blank" rel="noopener noreferrer">View All Projects</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3>Let's Work Together</h3>
-                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll get back to you as soon as possible!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:pratikdevkota05@gmail.com">pratikdevkota05@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
+                    <div class="social-links">
+                        <a href="https://github.com/Pratik-1-11" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
                             <i class="fab fa-github"></i>
-                            <a href="https://github.com/Pratik-1-11" target="_blank" rel="noopener noreferrer">github.com/Pratik-i-11</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Nepal</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pratik-devkota-09a559364/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:pratikdevkota05@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <img src="images/hero.png" alt="Pratik Devkota - React Native & Full-Stack Developer" width="500"
+                        height="500" fetchpriority="high">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p>I am a passionate learner with a strong foundation in web and software development. I focus
+                            on
+                            building <a href="blog/clean-code-matters.html">efficient, scalable</a>, and user-friendly
+                            solutions across multiple platforms. My interests include software engineering, project
+                            management, and integrating modern technologies to create innovative applications that make
+                            a
+                            real-world impact.</p>
+                        <p>With a background in both Computer Information Systems and Civil Engineering, I bring a
+                            unique
+                            perspective to problem-solving and project execution. I'm passionate about blending
+                            engineering
+                            and technology for <a href="blog/full-stack-guide.html">real-world problem solving</a> and
+                            committed to continuous learning and self-improvement specializing in <a
+                                href="blog/react-native-performance.html">React Native development</a>.</p>
+                    </div>
+                    <div class="education" data-aos="fade-left">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>Bachelor in Computer Information Systems (BCIS)</h4>
+                                <p class="timeline-date">2022 – Present</p>
+                                <p>Pokhara University</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>Diploma in Civil Engineering</h4>
+                                <p class="timeline-date">2018 – 2021</p>
+                                <p>CTEVT</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form id="contact-form" class="contact-form" data-aos="fade-left" action="https://formspree.io/f/xwvkqkww">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>Bootstrap & Tailwind</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3><i class="fas fa-server"></i> Backend & Mobile</h3>
+                        <ul>
+                            <li>PHP (Core)</li>
+                            <li>Node.js & Express</li>
+                            <li>SQL & MySQL</li>
+                            <li>React Native</li>
+                            <li>RESTful APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3><i class="fas fa-code"></i> Programming</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                        <h3><i class="fas fa-tools"></i> Additional Skills</h3>
+                        <ul>
+                            <li>Software Engineering</li>
+                            <li>Project Management</li>
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- Project 5 - Vishma POS -->
+                    <a href="projects/vishma.html" class="project-card-link">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="project-image">
+                                <img src="images/Vishma/Screenshot (9).png" alt="Vishma POS for Marts" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>Vishma POS</h3>
+                                <p class="project-tech">MongoDB, Express, React, Node.js</p>
+                                <p>A modern Point of Sale (POS) system designed for marts and retail stores in Nepal.
+                                    Features include sales management, inventory tracking, customer management, and
+                                    real-time reporting, providing a complete retail management solution.</p>
+                                <div class="project-links">
+                                    <span class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> View Details
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Project 1 - Gym Management -->
+                    <a href="projects/gym-management.html" class="project-card-link">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="project-image">
+                                <img src="images/Gym/Screenshot (22).png" alt="Gym Management System" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>Gym Management System</h3>
+                                <p class="project-tech">PHP, MySQL, JavaScript</p>
+                                <p>A comprehensive solution for managing gym memberships, classes, and personal training
+                                    sessions. Features include member tracking, attendance, payment processing, and
+                                    reporting tools for fitness businesses.</p>
+                                <div class="project-links">
+                                    <span class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> View Details
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 2 - Sahara Disaster Management -->
+                    <a href="projects/sahara-disaster.html" class="project-card-link">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="project-image">
+                                <img src="images/Sahara/a.png" alt="Sahara Disaster Management" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>Sahara Disaster Management</h3>
+                                <p class="project-tech">PHP, MySQL, JavaScript</p>
+                                <p>A comprehensive solution for disaster management and emergency response. Features
+                                    include
+                                    real-time incident reporting, resource allocation, and coordination tools for
+                                    emergency
+                                    responders and relief organizations.</p>
+                                <div class="project-links">
+                                    <span class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> View Details
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 3 - Jhandi Burja Game -->
+                    <a href="projects/jhandiBurja.html" class="project-card-link">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="project-image">
+                                <img src="images/Jhandi Burja/Screenshot (20).png" alt="Jhandi Burja Game"
+                                    loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>Jhandi Burja Game</h3>
+                                <p class="project-tech">HTML, CSS, JavaScript</p>
+                                <p>Developed an interactive online version of Nepal's traditional dice game. Implemented
+                                    betting and winnings logic with responsive design for mobile devices, bringing the
+                                    classic game to the digital world.</p>
+                                <div class="project-links">
+                                    <span class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> View Details
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 4 - Book Ecommerce -->
+                    <a href="projects/book.html" class="project-card-link">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="project-image">
+                                <img src="images/Book/Screenshot (27).png" alt="Book Ecommerce Site" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h3>Book Ecommerce Site</h3>
+                                <p class="project-tech">PHP, MySQL, React</p>
+                                <p>Built a fully functional book store with search, cart, and checkout features.
+                                    Integrated
+                                    backend APIs for inventory and order management, creating a seamless shopping
+                                    experience
+                                    for book lovers.</p>
+                                <div class="project-links">
+                                    <span class="project-link">
+                                        <i class="fas fa-external-link-alt"></i> View Details
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                    <a href="https://github.com/Pratik-i-11?tab=repositories" class="cta-button" target="_blank"
+                        rel="noopener noreferrer">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>Let's Work Together</h3>
+                        <p>I'm currently looking for new opportunities. Whether you have a question or just want to say
+                            hi,
+                            I'll get back to you as soon as possible!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:pratikdevkota05@gmail.com">pratikdevkota05@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/Pratik-1-11" target="_blank"
+                                    rel="noopener noreferrer">github.com/Pratik-i-11</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Nepal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form" data-aos="fade-left"
+                       method="post" action="https://formspree.io/f/xwvkqkww">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-   <footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3 class="footer-heading">Pratik Devkota</h3>
-                <p class="footer-about">Full-Stack Developer creating efficient, scalable, and user-friendly applications.</p>
-                <div class="social-links">
-                    <a href="https://github.com/Pratik-1-11" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    <a href="https://www.linkedin.com/in/pratik-devkota-09a559364/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                       
-                    </a>
-                    <a href="mailto:pratikdevkota05@gmail.com" aria-label="Email" title="Email">
-                        <i class="fas fa-envelope"></i>
-                       
-                    </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-heading">Pratik Devkota</h3>
+                    <p class="footer-about">Full-Stack Developer creating efficient, scalable, and user-friendly
+                        applications.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Pratik-1-11" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" title="GitHub">
+                            <i class="fab fa-github"></i>
+
+                        </a>
+                        <a href="https://www.linkedin.com/in/pratik-devkota-09a559364/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+                        <a href="mailto:pratikdevkota05@gmail.com" aria-label="Email" title="Email">
+                            <i class="fas fa-envelope"></i>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Get In Touch</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:pratikdevkota05@gmail.com">pratikdevkota05@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Kathmandu, Nepal</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="footer-section">
-                <h3 class="footer-heading">Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
-                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3 class="footer-heading">Get In Touch</h3>
-                <ul class="contact-info">
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <a href="mailto:pratikdevkota05@gmail.com">pratikdevkota05@gmail.com</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <span>Kathmandu, Nepal</span>
-                        </div>
-                    </li>
-                </ul>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pratik Devkota. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#terms">Terms of Service</a>
+                </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2023 Pratik Devkota. All rights reserved.</p>
-            <div class="footer-legal">
-                <a href="#privacy">Privacy Policy</a>
-                <span>•</span>
-                <a href="#terms">Terms of Service</a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" aria-label="Toggle dark mode">
         <i class="fas fa-moon"></i>
     </button>
-    
+
     <!-- Back to Top Button -->
     <button class="back-to-top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Hidden SEO Links for Crawlers -->
+    <div class="sr-only">
+        <a href="blog/it-services-nepal.html">IT Services in Palungtar and Gorkha Municipality - Pratik Devkota</a>
+    </div>
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -394,4 +483,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gym Management System - A comprehensive solution for managing gym memberships, classes, and personal training sessions.">
-    <meta name="keywords" content="Gym Management, Fitness, Web Application, PHP, MySQL, Pratik Devkota">
+    <meta name="description"
+        content="Gym Management System - A complete PHP & MySQL solution for fitness business management. Developed by Pratik Devkota.">
+    <meta name="keywords"
+        content="Gym Management Software, Fitness Business App, PHP MySQL Project, Pratik Devkota Nepal, Full Stack Developer">
     <meta name="author" content="Pratik Devkota">
-    
+
+    <link rel="canonical" href="https://devkotapratik.com.np/projects/gym-management.html">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pratikdevkota.com/projects/gym-management">
+    <meta property="og:url" content="https://devkotapratik.com.np/projects/gym-management.html">
     <meta property="og:title" content="Gym Management System | Pratik Devkota">
-    <meta property="og:description" content="A comprehensive solution for managing gym memberships, classes, and personal training sessions.">
-    <meta property="og:image" content="https://pratikdevkota.com/images/Gym/Screenshot (22).png">
-    
+    <meta property="og:description"
+        content="A comprehensive solution for managing gym memberships, classes, and sessions built with PHP and MySQL.">
+    <meta property="og:image" content="https://devkotapratik.com.np/images/Gym/Screenshot%20(22).png">
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gym Management System | Pratik Devkota">
-    <meta name="twitter:description" content="A comprehensive solution for managing gym memberships, classes, and personal training sessions.">
-    <meta name="twitter:image" content="https://pratikdevkota.com/images/Gym/Screenshot (22).png">
+    <meta name="twitter:description"
+        content="A comprehensive solution for managing gym memberships, classes, and sessions built with PHP and MySQL.">
+    <meta name="twitter:image" content="https://devkotapratik.com.np/images/Gym/Screenshot%20(22).png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Gym Management System",
+      "operatingSystem": "Web",
+      "applicationCategory": "BusinessApplication",
+      "author": {
+        "@type": "Person",
+        "name": "Pratik Devkota"
+      },
+      "description": "A comprehensive solution for managing gym memberships, classes, and sessions built with PHP and MySQL.",
+      "screenshot": "https://devkotapratik.com.np/images/Gym/Screenshot%20(22).png"
+    }
+    </script>
 
     <title>Gym Management System - Pratik Devkota</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="../css/style.css">
     <style>
         /* Project Slider Styles */
@@ -39,20 +63,21 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         .image-slider {
             width: 100%;
             position: relative;
         }
-        
+
         .slider-image {
             width: 100%;
             height: auto;
             display: block;
             border-radius: 8px;
         }
-        
-        .slick-prev, .slick-next {
+
+        .slick-prev,
+        .slick-next {
             width: 40px;
             height: 40px;
             z-index: 1;
@@ -64,45 +89,46 @@
             color: #333;
             transition: all 0.3s ease;
         }
-        
-        .slick-prev:hover, .slick-next:hover {
+
+        .slick-prev:hover,
+        .slick-next:hover {
             background: #4a5568;
             color: white;
         }
-        
+
         .slick-prev {
             left: 15px;
         }
-        
+
         .slick-next {
             right: 15px;
         }
-        
+
         .slick-dots {
             bottom: 15px;
         }
-        
+
         .slick-dots li button:before {
             font-size: 12px;
             color: white;
             opacity: 0.7;
         }
-        
+
         .slick-dots li.slick-active button:before {
             color: white;
             opacity: 1;
         }
-        
+
         /* Auto-scroll animation */
         .slick-slide {
             transition: transform 0.5s ease-in-out;
         }
-        
+
         .slick-track {
             display: flex;
             align-items: center;
         }
-        
+
         .slick-slide img {
             margin: 0 auto;
             max-height: 600px;
@@ -115,32 +141,32 @@
             margin: 0 auto;
             padding: 2rem 1.5rem;
         }
-        
+
         .blog-header {
             text-align: center;
             margin-bottom: 3rem;
         }
-        
+
         .blog-title {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: #2d3748;
         }
-        
+
         .blog-meta {
             color: #718096;
             margin-bottom: 2rem;
             font-size: 0.95rem;
         }
-        
+
         .blog-section {
             margin-bottom: 3rem;
             background: white;
             border-radius: 8px;
             padding: 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
-        
+
         .section-title {
             font-size: 1.5rem;
             color: #2d3748;
@@ -148,39 +174,39 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #e2e8f0;
         }
-        
+
         .section-content {
             line-height: 1.7;
             color: #4a5568;
         }
-        
+
         .objectives-list {
             list-style-type: none;
             padding: 0;
         }
-        
+
         .objectives-list li {
             padding: 0.75rem 0 0.75rem 1.5rem;
             position: relative;
             margin-bottom: 0.5rem;
         }
-        
+
         .objectives-list li:before {
             content: "→";
             position: absolute;
             left: 0;
             color: #4f46e5;
         }
-        
+
         @media (max-width: 768px) {
             .blog-container {
                 padding: 1rem;
             }
-            
+
             .blog-section {
                 padding: 1.5rem;
             }
-            
+
             .blog-title {
                 font-size: 2rem;
             }
@@ -188,29 +214,30 @@
     </style>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
+
 <body>
-     <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="/index.html#home" class="logo">Pratik Devkota</a>
-            
+            <a href="../index.html#home" class="logo">Pratik Devkota</a>
+
             <!-- Hamburger Menu Button -->
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            
+
             <!-- Navigation Links -->
             <ul class="nav-links">
-                <li><a href="/index.html" class="nav-link">Home</a></li>
-                <li><a href="/index.html#about" class="nav-link">About</a></li>
-                <li><a href="/index.html#projects" class="nav-link">Projects</a></li>
-                <li><a href="/index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
+
     <!-- Blog Content -->
     <div class="blog-container">
         <header class="blog-header">
@@ -224,10 +251,15 @@
         <!-- Project Image Slider -->
         <div class="project-slider-container">
             <div class="image-slider">
-                <div><img src="../images/Gym/Screenshot (22).png" alt="Gym Management System - Dashboard" class="slider-image"></div>
-                <div><img src="../images/Gym/Screenshot (23).png" alt="Gym Management System - Members" class="slider-image"></div>
-                <div><img src="../images/Gym/Screenshot (24).png" alt="Gym Management System - Classes" class="slider-image"></div>
-                <div><img src="../images/Gym/Screenshot (25).png" alt="Gym Management System - Reports" class="slider-image"></div>
+                <div><img src="../images/Gym/Screenshot (22).png" alt="Gym Management System - Dashboard Overview"
+                        class="slider-image" width="1000" height="600"></div>
+                <div><img src="../images/Gym/Screenshot (23).png" alt="Gym Management System - Member Management List"
+                        class="slider-image" width="1000" height="600"></div>
+                <div><img src="../images/Gym/Screenshot (24).png"
+                        alt="Gym Management System - Class Schedule Management" class="slider-image" width="1000"
+                        height="600"></div>
+                <div><img src="../images/Gym/Screenshot (25).png" alt="Gym Management System - Financial Reports"
+                        class="slider-image" width="1000" height="600"></div>
             </div>
         </div>
 
@@ -235,10 +267,13 @@
         <section class="blog-section">
             <h2 class="section-title">Introduction</h2>
             <div class="section-content">
-                <p>The Gym Management System is a comprehensive web application designed to streamline the operations of fitness centers and gyms. This platform provides tools for managing memberships, class schedules, personal training sessions, and facility usage, all through an intuitive and user-friendly interface.</p>
+                <p>The Gym Management System is a comprehensive web application designed to streamline the operations of
+                    fitness centers and gyms. This platform provides tools for managing memberships, class schedules,
+                    personal training sessions, and facility usage, all through an intuitive and user-friendly
+                    interface.</p>
             </div>
         </section>
-        
+
         <!-- Objectives Section -->
         <section class="blog-section">
             <h2 class="section-title">Project Objectives</h2>
@@ -252,13 +287,15 @@
                 </ul>
             </div>
         </section>
-        
+
         <!-- Technical Details -->
         <section class="blog-section">
             <h2 class="section-title">Technical Implementation</h2>
             <div class="section-content">
-                <p>Built with a robust tech stack that ensures reliability and scalability for gym businesses of all sizes. The system features a responsive design that works seamlessly across desktop and mobile devices, with role-based access control to ensure data security and privacy.</p>
-                
+                <p>Built with a robust tech stack that ensures reliability and scalability for gym businesses of all
+                    sizes. The system features a responsive design that works seamlessly across desktop and mobile
+                    devices, with role-based access control to ensure data security and privacy.</p>
+
                 <h3>Key Features:</h3>
                 <ul class="objectives-list">
                     <li>Member Management: Track member information, memberships, and attendance</li>
@@ -267,7 +304,7 @@
                     <li>Reporting: Generate detailed reports on membership, attendance, and revenue</li>
                     <li>Mobile Access: Responsive design for on-the-go management</li>
                 </ul>
-                
+
                 <h3>Technical Implementation:</h3>
                 <ul class="objectives-list">
                     <li>Frontend: HTML5, CSS3, JavaScript, jQuery</li>
@@ -280,13 +317,75 @@
         </section>
     </div>
 
-   
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-heading">Pratik Devkota</h3>
+                    <p class="footer-about">Full-Stack Developer creating efficient, scalable, and user-friendly
+                        applications.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Pratik-1-11" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pratik-devkota-09a559364/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:pratikdevkota05@gmail.com" aria-label="Email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../index.html#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="../index.html#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="../index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Get In Touch</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:pratikdevkota05@gmail.com">pratikdevkota05@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Kathmandu, Nepal</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pratik Devkota. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="../index.html#privacy">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="../index.html#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('.image-slider').slick({
                 dots: true,
                 infinite: true,
@@ -302,4 +401,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vishma - A modern e-learning platform for professional courses and skill development.">
-    <meta name="keywords" content="E-learning, Online Courses, Web Application, MERN Stack, Pratik Devkota">
+    <meta name="description"
+        content="Vishma - A modern MERN stack POS system for retail marts in Nepal. Developed by Pratik Devkota.">
+    <meta name="keywords"
+        content="MERN Stack POS, Point of Sale Nepal, Retail Management System, Pratik Devkota, React Portfolio">
     <meta name="author" content="Pratik Devkota">
-    
+
+    <link rel="canonical" href="https://devkotapratik.com.np/projects/vishma.html">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pratikdevkota.com/projects/vishma">
-    <meta property="og:title" content="Vishma E-Learning Platform | Pratik Devkota">
-    <meta property="og:description" content="A comprehensive e-learning platform for professional courses and skill development.">
-    <meta property="og:image" content="https://pratikdevkota.com/images/Vishma/dashboard.png">
-    
+    <meta property="og:url" content="https://devkotapratik.com.np/projects/vishma.html">
+    <meta property="og:title" content="Vishma POS System | Pratik Devkota">
+    <meta property="og:description"
+        content="A comprehensive POS system for retail marts built with MongoDB, Express, React, and Node.js.">
+    <meta property="og:image" content="https://devkotapratik.com.np/images/Vishma/Screenshot%20(9).png">
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vishma E-Learning Platform | Pratik Devkota">
-    <meta name="twitter:description" content="A comprehensive e-learning platform for professional courses and skill development.">
-    <meta name="twitter:image" content="https://pratikdevkota.com/images/Vishma/dashboard.png">
+    <meta name="twitter:title" content="Vishma POS System | Pratik Devkota">
+    <meta name="twitter:description"
+        content="A comprehensive POS system for retail marts built with MongoDB, Express, React, and Node.js.">
+    <meta name="twitter:image" content="https://devkotapratik.com.np/images/Vishma/Screenshot%20(9).png">
 
-    <title>Vishma E-Learning - Pratik Devkota</title>
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Vishma POS System",
+      "operatingSystem": "Web",
+      "applicationCategory": "BusinessApplication",
+      "author": {
+        "@type": "Person",
+        "name": "Pratik Devkota"
+      },
+      "description": "A comprehensive POS system for retail marts built with MongoDB, Express, React, and Node.js.",
+      "screenshot": "https://devkotapratik.com.np/images/Vishma/Screenshot%20(9).png"
+    }
+    </script>
+
+    <title>Vishma POS System - Pratik Devkota</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="../css/style.css">
     <style>
         /* Blog Style Overrides */
@@ -35,32 +59,32 @@
             margin: 0 auto;
             padding: 2rem 1.5rem;
         }
-        
+
         .blog-header {
             text-align: center;
             margin-bottom: 3rem;
         }
-        
+
         .blog-title {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: #2d3748;
         }
-        
+
         .blog-meta {
             color: #718096;
             margin-bottom: 2rem;
             font-size: 0.95rem;
         }
-        
+
         .blog-section {
             margin-bottom: 3rem;
             background: white;
             border-radius: 8px;
             padding: 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
-        
+
         .section-title {
             font-size: 1.5rem;
             color: #2d3748;
@@ -68,86 +92,88 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #e2e8f0;
         }
-        
+
         .section-content {
             line-height: 1.7;
             color: #4a5568;
         }
-        
+
         .image-slider {
             margin: 2rem 0;
             border-radius: 8px;
             overflow: hidden;
             position: relative;
         }
-        
-        .slick-prev, .slick-next {
+
+        .slick-prev,
+        .slick-next {
             z-index: 1;
             width: 40px;
             height: 40px;
         }
-        
-        .slick-prev:before, .slick-next:before {
+
+        .slick-prev:before,
+        .slick-next:before {
             font-size: 40px;
             color: #4f46e5;
         }
-        
+
         .slick-prev {
             left: 10px;
         }
-        
+
         .slick-next {
             right: 10px;
         }
-        
+
         .slick-dots {
             bottom: 10px;
         }
-        
+
         .slick-dots li button:before {
             font-size: 12px;
             color: #fff;
             opacity: 0.5;
         }
-        
+
         .slick-dots li.slick-active button:before {
             color: #4f46e5;
             opacity: 1;
         }
-        
+
         .image-slider img {
             width: 100%;
             height: auto;
             border-radius: 4px;
         }
-        
+
         .objectives-list {
             list-style-type: none;
             padding: 0;
         }
-        
+
         .objectives-list li {
             padding: 0.75rem 0 0.75rem 1.5rem;
             position: relative;
             margin-bottom: 0.5rem;
         }
-        
+
         .objectives-list li:before {
             content: "→";
             position: absolute;
             left: 0;
             color: #4f46e5;
         }
-        
+
         @media (max-width: 768px) {
             .blog-container {
                 padding: 1rem;
             }
-            
+
             .blog-section {
                 padding: 1.5rem;
             }
-            
+
             .blog-title {
                 font-size: 2rem;
             }
@@ -155,25 +181,26 @@
     </style>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="/index.html#home" class="logo">Pratik Devkota</a>
-            
+
             <!-- Hamburger Menu Button -->
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            
+
             <!-- Navigation Links -->
             <ul class="nav-links">
-                <li><a href="/index.html" class="nav-link">Home</a></li>
-                <li><a href="/index.html#about" class="nav-link">About</a></li>
-                <li><a href="/index.html#projects" class="nav-link">Projects</a></li>
-                <li><a href="/index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -187,32 +214,45 @@
                 <span><i class="fas fa-tag"></i> Web Development, E-learning, MERN Stack</span>
             </div>
         </header>
-        
+
         <!-- Introduction Section -->
         <section class="blog-section">
             <h2 class="section-title">Introduction</h2>
             <div class="section-content">
-                <p>Vishma is a comprehensive e-learning platform designed to provide high-quality professional courses and skill development programs. The platform offers an interactive learning experience with video lessons, quizzes, and hands-on projects, making it easier for learners to acquire new skills at their own pace.</p>
+                <p>Vishma is a comprehensive e-learning platform designed to provide high-quality professional courses
+                    and skill development programs. The platform offers an interactive learning experience with video
+                    lessons, quizzes, and hands-on projects, making it easier for learners to acquire new skills at
+                    their own pace.</p>
             </div>
         </section>
-        
+
         <!-- Image Slider -->
         <section class="blog-section">
             <h2 class="section-title">Project Showcase</h2>
             <div class="image-slider">
-                <div><img src="../images/Vishma/Screenshot (10).png" alt="Vishma Dashboard"></div>
-                <div><img src="../images/Vishma/Screenshot (11).png" alt="Course Page"></div>
-                <div><img src="../images/Vishma/Screenshot (12).png" alt="Interactive Lesson"></div>
-                <div><img src="../images/Vishma/Screenshot (13).png" alt="Certificate"></div>
-                <div><img src="../images/Vishma/Screenshot (14).png" alt="Interactive Lesson"></div>
-                <div><img src="../images/Vishma/Screenshot (15).png" alt="Interactive Lesson"></div>
-                <div><img src="../images/Vishma/Screenshot (16).png" alt="Interactive Lesson"></div>
-                <div><img src="../images/Vishma/Screenshot (17).png" alt="Interactive Lesson"></div>
-                <div><img src="../images/Vishma/Screenshot (18).png" alt="Interactive Lesson"></div>
-                <div><img src="../images/Vishma/Screenshot (19).png" alt="Interactive Lesson"></div>
+                <div><img src="../images/Vishma/Screenshot (10).png" alt="Vishma Retail POS Dashboard" width="800"
+                        height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (11).png" alt="Vishma Inventory Management Page" width="800"
+                        height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (12).png" alt="Vishma Sales Reporting Interface" width="800"
+                        height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (13).png" alt="Vishma Customer Management System" width="800"
+                        height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (14).png" alt="Vishma Product Catalog View" width="800"
+                        height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (15).png" alt="Vishma Interactive Checkout Process"
+                        width="800" height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (16).png" alt="Vishma Detailed Order History" width="800"
+                        height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (17).png" alt="Vishma Analytics and Insights" width="800"
+                        height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (18).png" alt="Vishma System Settings" width="800"
+                        height="450"></div>
+                <div><img src="../images/Vishma/Screenshot (19).png" alt="Vishma User Role Management" width="800"
+                        height="450"></div>
             </div>
         </section>
-        
+
         <!-- Objectives Section -->
         <section class="blog-section">
             <h2 class="section-title">Project Objectives</h2>
@@ -226,13 +266,15 @@
                 </ul>
             </div>
         </section>
-        
+
         <!-- Technical Details -->
         <section class="blog-section">
             <h2 class="section-title">Technical Implementation</h2>
             <div class="section-content">
-                <p>Built with the MERN stack (MongoDB, Express.js, React.js, Node.js) for a full JavaScript development experience. The platform features a microservices architecture for scalability and uses modern development practices for maintainability and performance.</p>
-                
+                <p>Built with the MERN stack (MongoDB, Express.js, React.js, Node.js) for a full JavaScript development
+                    experience. The platform features a microservices architecture for scalability and uses modern
+                    development practices for maintainability and performance.</p>
+
                 <h3>Key Technologies:</h3>
                 <ul class="objectives-list">
                     <li>Frontend: React.js with Redux for state management</li>
@@ -246,13 +288,73 @@
     </div>
 
     <!-- Footer -->
-    <include data-file="../components/footer.html"></include>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-heading">Pratik Devkota</h3>
+                    <p class="footer-about">Full-Stack Developer creating efficient, scalable, and user-friendly
+                        applications.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Pratik-1-11" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pratik-devkota-09a559364/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:pratikdevkota05@gmail.com" aria-label="Email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="../index.html#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="../index.html#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="../index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Get In Touch</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:pratikdevkota05@gmail.com">pratikdevkota05@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Kathmandu, Nepal</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pratik Devkota. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="../index.html#privacy">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="../index.html#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('.image-slider').slick({
                 dots: true,
                 infinite: true,
@@ -275,4 +377,5 @@
         });
     </script>
 </body>
+
 </html>
