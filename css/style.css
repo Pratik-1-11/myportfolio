@@ -81,6 +81,13 @@ img {
     display: block;
 }
 
+/* Circular favicon */
+link[rel="icon"] {
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
 ul {
     list-style: none;
 }
