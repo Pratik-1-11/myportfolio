@@ -9,7 +9,7 @@ const sections = document.querySelectorAll('section');
 const projectLinks = document.querySelectorAll('.project-link');
 
 // Check for saved theme preference or use system preference
-const savedTheme = localStorage.getItem('theme') || 
+const savedTheme = localStorage.getItem('theme') ||
     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 document.documentElement.setAttribute('data-theme', savedTheme);
 
@@ -29,7 +29,7 @@ function updateThemeIcon(theme) {
     if (!themeToggle) return;
     const icon = themeToggle.querySelector('i');
     if (!icon) return;
-    
+
     icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
 }
 
@@ -42,10 +42,10 @@ if (hamburger) {
         // Toggle menu visibility
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
-        
+
         // Toggle body scroll
         document.body.classList.toggle('menu-open');
-        
+
         // Update aria-expanded attribute
         const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
         hamburger.setAttribute('aria-expanded', !isExpanded);
@@ -77,22 +77,8 @@ if (navLinks) {
 }
 
 // Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
+// Smooth scrolling is handled by CSS (html { scroll-behavior: smooth; })
+// The scroll-padding-top property in CSS handles the navbar offset.
 
 // Show/hide back to top button
 window.addEventListener('scroll', () => {
@@ -101,18 +87,18 @@ window.addEventListener('scroll', () => {
     } else {
         backToTopBtn.classList.remove('visible');
     }
-    
+
     // Update active navigation link
     let current = '';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        
+
         if (pageYOffset >= sectionTop - 200) {
             current = `#${section.getAttribute('id')}`;
         }
     });
-    
+
     navItems.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === current) {
@@ -133,20 +119,20 @@ backToTopBtn.addEventListener('click', () => {
 if (form) {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const formData = new FormData(form);
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalBtnText = submitBtn.textContent;
-        
+
         try {
             // Disable button and show loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            
+
             // In a real application, you would send the form data to a server here
             // For now, we'll simulate a network request
             await new Promise(resolve => setTimeout(resolve, 1500));
-            
+
             // Show success message
             const successMessage = document.createElement('div');
             successMessage.className = 'success-message';
@@ -154,16 +140,16 @@ if (form) {
             successMessage.style.color = '#10b981';
             successMessage.style.marginTop = '1.5rem';
             successMessage.style.fontWeight = '500';
-            
+
             // Remove any existing messages
             const existingMessage = form.querySelector('.success-message, .error-message');
             if (existingMessage) {
                 existingMessage.remove();
             }
-            
+
             form.appendChild(successMessage);
             form.reset();
-            
+
         } catch (error) {
             // Show error message
             const errorMessage = document.createElement('div');
@@ -172,19 +158,19 @@ if (form) {
             errorMessage.style.color = '#ef4444';
             errorMessage.style.marginTop = '1.5rem';
             errorMessage.style.fontWeight = '500';
-            
+
             // Remove any existing messages
             const existingMessage = form.querySelector('.success-message, .error-message');
             if (existingMessage) {
                 existingMessage.remove();
             }
-            
+
             form.appendChild(errorMessage);
         } finally {
             // Re-enable button and restore original text
             submitBtn.disabled = false;
             submitBtn.textContent = originalBtnText;
-            
+
             // Remove message after 5 seconds
             setTimeout(() => {
                 const message = form.querySelector('.success-message, .error-message');
@@ -232,29 +218,29 @@ projectLinks.forEach(link => {
 // Initialize tooltips if using any
 function initTooltips() {
     const tooltipElements = document.querySelectorAll('[data-tooltip]');
-    
+
     tooltipElements.forEach(el => {
         const tooltip = document.createElement('div');
         tooltip.className = 'tooltip';
         tooltip.textContent = el.getAttribute('data-tooltip');
         document.body.appendChild(tooltip);
-        
+
         const showTooltip = (e) => {
             tooltip.style.display = 'block';
             updateTooltipPosition(e);
         };
-        
+
         const hideTooltip = () => {
             tooltip.style.display = 'none';
         };
-        
+
         const updateTooltipPosition = (e) => {
             const x = e.clientX;
             const y = e.clientY;
             tooltip.style.left = `${x + 10}px`;
             tooltip.style.top = `${y + 10}px`;
         };
-        
+
         el.addEventListener('mouseenter', showTooltip);
         el.addEventListener('mousemove', updateTooltipPosition);
         el.addEventListener('mouseleave', hideTooltip);
@@ -270,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroContent) {
         heroContent.classList.add('fade-in-up');
     }
-    
+
     // Add animation delay to hero buttons
     const heroButtons = document.querySelector('.cta-buttons');
     if (heroButtons) {
